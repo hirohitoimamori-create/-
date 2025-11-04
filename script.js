@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const image = detail.querySelector(".interactive-panel__image");
     const title = detail.querySelector(".interactive-panel__title");
     const description = detail.querySelector(".interactive-panel__description");
-    const list = detail.querySelector(".interactive-panel__list");
+    const list = detail.querySelector(".interactive-panel__highlights");
     const caption = detail.querySelector(".interactive-panel__caption");
 
     const updateDetail = (button) => {

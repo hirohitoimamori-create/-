@@ -326,7 +326,7 @@ img {
   grid-template-columns: minmax(260px, 1fr) 2fr;
 }
 
-.interactive-panel__list {
+.interactive-panel__choices {
   display: grid;
   gap: 1rem;
 }
@@ -422,7 +422,7 @@ img {
   margin: 0 0 1.1rem;
 }
 
-.interactive-panel__list {
+.interactive-panel__highlights {
   margin: 0;
   padding-left: 1.1rem;
   display: grid;
@@ -540,7 +540,7 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .interactive-panel__list {
+  .interactive-panel__choices {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
