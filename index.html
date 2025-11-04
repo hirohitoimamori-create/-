@@ -1,1 +1,443 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>横浜中華街ガイド</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1>ようこそ、横浜中華街へ</h1>
+        <p>
+          色鮮やかな牌楼と香り立つスパイスが迎える日本最大級のチャイナタウン。食から
+          文化まで、ワクワクする体験が1日中楽しめます。
+        </p>
+        <div class="hero__cta">
+          <a class="hero__button" href="#spots">スポットを探す</a>
+          <a class="hero__button hero__button--outline" href="#gourmet"
+            >グルメを味わう</a
+          >
+        </div>
+      </div>
+    </header>
 
+    <main>
+      <section id="about" class="section section--light">
+        <div class="container">
+          <h2>中華街の魅力</h2>
+          <div class="split">
+            <div class="split__main">
+              <p>
+                横浜中華街は約160年の歴史を誇り、現在は600を超える店舗が集まる日本
+                最大級のチャイナタウンです。鮮やかな五彩八門が街の入口を飾り、旧正月
+                や中秋節など季節ごとのイベントが一年を通して開催されます。
+              </p>
+              <p>
+                伝統的な広東・上海料理から最新の台湾スイーツまで、ジャンル豊かな
+                グルメが勢ぞろい。文化体験や開運スポットも多く、家族旅行や女子旅、
+                デートにもぴったりのディスティネーションです。
+              </p>
+              <p>
+                ここでは、初めて訪れる方でも効率よく巡れるおすすめスポットやグルメ、
+                モデルコース、イベント情報をまとめました。滞在前にチェックして、中華街
+                の魅力を余すことなく楽しみましょう。
+              </p>
+            </div>
+            <aside class="stats">
+              <div class="stat">
+                <span class="stat__value">600+</span>
+                <span class="stat__label">飲食店・ショップ</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">10</span>
+                <span class="stat__label">歴史ある牌楼</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">160年</span>
+                <span class="stat__label">横浜開港からの歴史</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">24h</span>
+                <span class="stat__label">深夜営業の店も</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="spots" class="section section--dark">
+        <div class="container">
+          <h2>おすすめスポット</h2>
+          <p class="section__lead">
+            観光のハイライトとなる建物や通りをピックアップ。スポット名をクリックすると、
+            詳細情報と写真が表示されます。
+          </p>
+          <div class="interactive-panel" data-panel="spots">
+            <div class="interactive-panel__list">
+              <button
+                type="button"
+                class="interactive-panel__item is-active"
+                data-title="善隣門"
+                data-image="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80"
+                data-alt="夕暮れに輝く善隣門の全景"
+                data-description="横浜中華街の玄関口として知られる最大の牌楼。高さ13.8mの四層構造で、朱と青、金を基調にした装飾が夜間ライトアップでさらに煌びやかに輝きます。"
+                data-caption="善隣門のライトアップは毎日21時頃まで点灯。"
+                data-highlights="最寄り: 元町・中華街駅1番出口|撮影スポット: 門前の広場から全景が撮影可能|楽しみ方: 夜に訪れてライトアップを堪能"
+              >
+                <span class="interactive-panel__item-heading">善隣門</span>
+                <span class="interactive-panel__item-text"
+                  >中華街最大の牌楼。街歩きのスタート地点に最適。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="横濱媽祖廟"
+                data-image="https://images.unsplash.com/photo-1578926122487-4665f993c1f9?auto=format&fit=crop&w=1200&q=80"
+                data-alt="豪華な装飾が施された横濱媽祖廟"
+                data-description="航海と商売繁盛を司る女神・媽祖を祀る寺院。七色の屋根飾りと極彩色の彫刻、香炉から立ち上る線香の煙が幻想的な雰囲気を作り出します。夜は提灯が灯り、落ち着いた祈りの空間に。"
+                data-caption="媽祖廟では色とりどりの提灯が境内を柔らかく照らします。"
+                data-highlights="御利益: 航海安全・商売繁盛|参拝時間: 9:00〜19:00|体験: 願い事を込める参拝リボン(有料)"
+              >
+                <span class="interactive-panel__item-heading">横濱媽祖廟</span>
+                <span class="interactive-panel__item-text"
+                  >海の守り神を祀る荘厳な寺院で開運祈願を。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="朝陽門"
+                data-image="https://images.unsplash.com/photo-1548789038-883fb045f6b0?auto=format&fit=crop&w=1200&q=80"
+                data-alt="朝陽門の細部装飾"
+                data-description="東側の入り口に位置する朝陽門は、青と金が基調の爽やかな配色が特徴。門をくぐると点心店や雑貨店が並ぶエリアへと繋がり、散策気分を高めてくれます。"
+                data-caption="朝陽門は午前中のやわらかな光で装飾が一層映えます。"
+                data-highlights="方角: 東の守護門|おすすめ時間: 朝の柔らかな光に映える|周辺: 点心専門店が多数"
+              >
+                <span class="interactive-panel__item-heading">朝陽門</span>
+                <span class="interactive-panel__item-text"
+                  >青と金が鮮やかな東の守り門。朝の散策におすすめ。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="關帝廟"
+                data-image="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+                data-alt="關帝廟の本殿内部"
+                data-description="三国志の英雄・關羽を祀る關帝廟は、商売繁盛や学問成就のパワースポット。豪華な本殿内には金色に輝く神像が並び、参拝後にはオリジナルお守りも購入できます。"
+                data-caption="本殿奥の關聖帝君像は金箔がまぶしい必見スポット。"
+                data-highlights="御利益: 商売繁盛・学問成就|歴史: 1873年創建|おすすめ: 本殿の天井画も必見"
+              >
+                <span class="interactive-panel__item-heading">關帝廟</span>
+                <span class="interactive-panel__item-text"
+                  >ビジネスや学業の成功を願う人々で賑わう聖地。</span
+                >
+              </button>
+            </div>
+            <div class="interactive-panel__detail">
+              <figure class="interactive-panel__figure">
+                <img
+                  class="interactive-panel__image"
+                  src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80"
+                  alt="夕暮れに輝く善隣門の全景"
+                />
+                <figcaption class="interactive-panel__caption">
+                  善隣門のライトアップは毎日21時頃まで点灯。
+                </figcaption>
+              </figure>
+              <div class="interactive-panel__content">
+                <h3 class="interactive-panel__title">善隣門</h3>
+                <p class="interactive-panel__description">
+                  横浜中華街の玄関口として知られる最大の牌楼。高さ13.8mの四層構造で、朱
+                  と青、金を基調にした装飾が夜間ライトアップでさらに煌びやかに輝きます。
+                </p>
+                <ul class="interactive-panel__list">
+                  <li>最寄り: 元町・中華街駅1番出口</li>
+                  <li>撮影スポット: 門前の広場から全景が撮影可能</li>
+                  <li>楽しみ方: 夜に訪れてライトアップを堪能</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gourmet" class="section section--light">
+        <div class="container">
+          <h2>おすすめグルメ</h2>
+          <p class="section__lead">
+            中華街に来たら外せない代表メニューを厳選。料理名を選ぶと、おすすめ店や味
+            わいポイントが確認できます。
+          </p>
+          <div class="interactive-panel" data-panel="gourmet">
+            <div class="interactive-panel__list">
+              <button
+                type="button"
+                class="interactive-panel__item is-active"
+                data-title="小籠包"
+                data-image="https://images.unsplash.com/photo-1587467512961-12076064013f?auto=format&fit=crop&w=1200&q=80"
+                data-alt="蒸籠に並んだ小籠包"
+                data-description="薄い皮の中に旨味たっぷりのスープを閉じ込めた人気No.1点心。レンゲに乗せて少し割り、黒酢と生姜を絡めて味わうのが鉄則です。"
+                data-caption="蒸し時間は約5分。アツアツのままレンゲで味わいましょう。"
+                data-highlights="おすすめ店: 鵬天閣・王府井|待ち時間目安: 土日で20〜30分|テイクアウト: 冷凍小籠包も購入可能"
+              >
+                <span class="interactive-panel__item-heading">小籠包</span>
+                <span class="interactive-panel__item-text"
+                  >蒸したてスープが溢れる中華街の王道グルメ。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="胡麻団子"
+                data-image="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80"
+                data-alt="揚げたての胡麻団子"
+                data-description="香ばしい胡麻衣とほんのり甘い餡が絶妙な揚げ菓子。歩きながら食べやすく、出来立てのサクもち食感がクセになります。"
+                data-caption="ごまの香りが立ちのぼる揚げたては格別。テイクアウト袋も用意されています。"
+                data-highlights="おすすめ店: 老維新・富貴包子楼|アレルギー: ごま・小麦|食べ歩き: テイクアウトOK、冷めても美味しい"
+              >
+                <span class="interactive-panel__item-heading">胡麻団子</span>
+                <span class="interactive-panel__item-text"
+                  >食べ歩きにも最適な香ばしい定番スイーツ。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="排骨飯"
+                data-image="https://images.unsplash.com/photo-1572018281235-0c7630dd5221?auto=format&fit=crop&w=1200&q=80"
+                data-alt="排骨飯のプレート"
+                data-description="カリッと揚げた骨付き豚肉を甘辛ソースに絡め、ご飯と煮卵、青菜を添えたボリューム満点の一皿。食事系メニューを楽しみたい人に人気です。"
+                data-caption="排骨は揚げ直しで提供される店舗が多く、衣のザクッと感と肉汁がたまりません。"
+                data-highlights="おすすめ店: 同發別館・梅蘭|辛さ: 中辛程度|テーブル席: ランチセットも充実"
+              >
+                <span class="interactive-panel__item-heading">排骨飯</span>
+                <span class="interactive-panel__item-text"
+                  >香辛料が効いた豚肉を豪快に味わえるごちそう飯。</span
+                >
+              </button>
+              <button
+                type="button"
+                class="interactive-panel__item"
+                data-title="杏仁豆腐"
+                data-image="https://images.unsplash.com/photo-1626200417028-1cb0ab240515?auto=format&fit=crop&w=1200&q=80"
+                data-alt="グラスに盛られた杏仁豆腐"
+                data-description="杏仁霜の香りが広がる、ぷるぷる食感のデザート。フルーツソースやタピオカをトッピングした進化系スイーツも大人気です。"
+                data-caption="ひんやり冷えた杏仁豆腐はテイクアウトカップも人気。お土産用ギフトも要チェック。"
+                data-highlights="おすすめ店: 横浜大飯店・南粤美食|テイクアウト: ボトルタイプも販売|食後: 辛い料理の後のクールダウンに"
+              >
+                <span class="interactive-panel__item-heading">杏仁豆腐</span>
+                <span class="interactive-panel__item-text"
+                  >やさしい甘さが魅力の締めデザートでほっと一息。</span
+                >
+              </button>
+            </div>
+            <div class="interactive-panel__detail">
+              <figure class="interactive-panel__figure">
+                <img
+                  class="interactive-panel__image"
+                  src="https://images.unsplash.com/photo-1587467512961-12076064013f?auto=format&fit=crop&w=1200&q=80"
+                  alt="蒸籠に並んだ小籠包"
+                />
+                <figcaption class="interactive-panel__caption">
+                  蒸し時間は約5分。アツアツのままレンゲで味わいましょう。
+                </figcaption>
+              </figure>
+              <div class="interactive-panel__content">
+                <h3 class="interactive-panel__title">小籠包</h3>
+                <p class="interactive-panel__description">
+                  薄い皮の中に旨味たっぷりのスープを閉じ込めた人気No.1点心。レンゲに乗せ
+                  て少し割り、黒酢と生姜を絡めて味わうのが鉄則です。
+                </p>
+                <ul class="interactive-panel__list">
+                  <li>おすすめ店: 鵬天閣・王府井</li>
+                  <li>待ち時間目安: 土日で20〜30分</li>
+                  <li>テイクアウト: 冷凍小籠包も購入可能</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="container">
+          <h2>季節のイベント</h2>
+          <div class="event-grid">
+            <article class="event-card">
+              <h3>春節 (1〜2月)</h3>
+              <p>
+                旧正月を祝う中華街最大のイベント。伝統衣装に身を包んだパレード、爆竹、舞
+                獅子が街全体を賑わせます。夜はランタンが灯り幻想的な雰囲気に。
+              </p>
+              <ul>
+                <li>おすすめ鑑賞スポット: 中華街大通り</li>
+                <li>混雑対策: 夕方前までの来訪が安心</li>
+              </ul>
+            </article>
+            <article class="event-card">
+              <h3>中秋節 (9月)</h3>
+              <p>
+                月餅の販売やランタン装飾が楽しめる秋の風物詩。夜空に浮かぶ満月と牌楼の
+                コントラストが美しく、撮影スポットとしても人気です。
+              </p>
+              <ul>
+                <li>限定スイーツ: オリジナル月餅・月見団子</li>
+                <li>フォトスポット: 善隣門〜朝陽門</li>
+              </ul>
+            </article>
+            <article class="event-card">
+              <h3>ドラゴンボートレース (5月)</h3>
+              <p>
+                山下公園前の海上で行われる迫力満点のレース。中華街からも多くのチームが
+                出場し、沿道では屋台グルメやミニライブを開催します。
+              </p>
+              <ul>
+                <li>観覧ポイント: 山下公園の芝生エリア</li>
+                <li>アクセス: 中華街から徒歩10分</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light" id="itinerary">
+        <div class="container">
+          <h2>半日モデルコース</h2>
+          <p class="section__lead">
+            初めての方でも安心して巡れる王道プラン。滞在時間4〜5時間を想定しています。
+          </p>
+          <ol class="timeline">
+            <li>
+              <h3>10:30 善隣門からスタート</h3>
+              <p>
+                待ち合わせと写真撮影。朝の柔らかな光で門の装飾が際立ちます。
+              </p>
+            </li>
+            <li>
+              <h3>11:00 小籠包ランチ</h3>
+              <p>人気店で蒸したて点心を味わい、早めの時間帯で行列回避。</p>
+            </li>
+            <li>
+              <h3>12:30 横濱媽祖廟を参拝</h3>
+              <p>境内で願いを込めたリボンを結び、開運のお守りを購入。</p>
+            </li>
+            <li>
+              <h3>13:30 中華街大通りでショッピング</h3>
+              <p>
+                中国茶や点心、パンダグッズなどのお土産探しを楽しみましょう。
+              </p>
+            </li>
+            <li>
+              <h3>14:30 杏仁豆腐でカフェタイム</h3>
+              <p>人気スイーツ店で一息つき、次の予定に備えて休憩。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--light" id="tips">
+        <div class="container">
+          <h2>旅のヒント</h2>
+          <div class="tips-grid">
+            <article class="tip-card">
+              <h3>混雑を避けるコツ</h3>
+              <p>
+                週末は11時〜15時が最も混雑します。朝イチまたは17時以降の来訪がおすすめ。
+                平日の夜は比較的ゆったり散策できます。
+              </p>
+            </article>
+            <article class="tip-card">
+              <h3>キャッシュレス情報</h3>
+              <p>
+                多くの店舗でQRコード決済や交通系ICカードが利用可能。屋台では現金のみの
+                場合があるため小銭も用意しておきましょう。
+              </p>
+            </article>
+            <article class="tip-card">
+              <h3>おすすめお土産</h3>
+              <p>
+                月餅やパンダモチーフのお菓子、薬膳茶、台湾カラスミなど、日持ちする食品
+                が人気。真空パックの点心は自宅でも本場の味が再現できます。
+              </p>
+            </article>
+            <article class="tip-card">
+              <h3>近隣の立ち寄りスポット</h3>
+              <p>
+                山下公園や赤レンガ倉庫、元町ショッピングストリートは徒歩圏内。海風を感
+                じる散策とショッピングを組み合わせましょう。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--light" id="access">
+        <div class="container">
+          <h2>アクセス</h2>
+          <div class="split">
+            <div class="split__main">
+              <p>
+                みなとみらい線「元町・中華街駅」から徒歩すぐ。JR根岸線「石川町駅」から
+                も歩いてアクセス可能です。首都高の横浜公園出口から車で約5分と、車利用
+                でも便利な立地です。
+              </p>
+              <div class="access-grid">
+                <div>
+                  <h3>住所</h3>
+                  <p>神奈川県横浜市中区山下町一帯</p>
+                </div>
+                <div>
+                  <h3>公式サイト</h3>
+                  <p>
+                    <a
+                      href="https://www.chinatown.or.jp/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >横浜中華街発展会協同組合</a
+                    >
+                  </p>
+                </div>
+                <div>
+                  <h3>最寄り駅</h3>
+                  <ul>
+                    <li>みなとみらい線 元町・中華街駅 2番出口</li>
+                    <li>JR根岸線 石川町駅 北口</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>観光案内所</h3>
+                  <p>朝陽門そばのインフォメーションセンターでマップを配布。</p>
+                </div>
+              </div>
+            </div>
+            <aside class="map-card">
+              <img
+                src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=80"
+                alt="横浜港周辺の空撮"
+              />
+              <p>山下公園や赤レンガ倉庫など人気観光地も徒歩圏内です。</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2024 Yokohama Chinatown Guide</p>
+        <nav>
+          <a href="#about">中華街の魅力</a>
+          <a href="#spots">おすすめスポット</a>
+          <a href="#gourmet">おすすめグルメ</a>
+          <a href="#access">アクセス</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
