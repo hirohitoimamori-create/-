@@ -1,0 +1,234 @@
+:root {
+  --primary: #c0392b;
+  --primary-dark: #8e2b20;
+  --accent: #f1c40f;
+  --text-dark: #2c3e50;
+  --text-light: #f8f9fa;
+  --background: #ffffff;
+  --background-alt: #f7f7f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-light);
+  overflow: hidden;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(192, 57, 43, 0.8),
+    rgba(241, 196, 15, 0.7)
+  );
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  padding: 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+  letter-spacing: 0.12em;
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 0.8rem 2.4rem;
+  border-radius: 999px;
+  background-color: var(--text-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.section {
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.section--light {
+  background-color: var(--background);
+}
+
+.section--dark {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+}
+
+.section--accent {
+  background: linear-gradient(
+    135deg,
+    rgba(192, 57, 43, 0.85),
+    rgba(241, 196, 15, 0.85)
+  );
+  color: var(--text-light);
+}
+
+.section h2 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  color: var(--text-dark);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.15);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.grid__item {
+  background-color: var(--background-alt);
+  border-radius: 16px;
+  padding: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.grid__item:hover,
+.grid__item:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.4rem 1.6rem;
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
+}
+
+.event-list__title {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.event-list__description {
+  font-size: 0.95rem;
+}
+
+.access {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer {
+  background-color: var(--text-dark);
+  color: var(--text-light);
+  padding: 1.5rem 0;
+}
+
+.footer nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.6rem;
+}
+
+.footer a {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero__button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
